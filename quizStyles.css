@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 25px;
+  font-family: "Carter One", cursive;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  width: 500px;
+  border-radius: 20px;
+  border: 3px black solid;
+  background-image: url(/5923794.jpg);
+  background-size: 500px auto;
+}
+
+.start-message {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Bungee Inline", cursive;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.end-message {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  font-size: 35px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.options-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 auto);
+  gap: 10px;
+}
+
+.question {
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px black solid;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+}
+
+.option {
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  background-color: #f8f9fa;
+  color: black;
+  border: 2px black solid;
+  font-family: "Carter One", cursive;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #ffd000;
+}
+
+.btn {
+  height: 50px;
+  width: 100px;
+  font-size: 25px;
+  font-family: PT Sans;
+  background-color: #ff7b00;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Bungee Inline", cursive;
+  line-height: 50px;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn:active {
+  filter: brightness(95%);
+}
